@@ -89,11 +89,8 @@ public class ArvoreBinariaBusca {
 			successsor = current;
 			current = current.left;
 		}
-		// check if successor has the right child, it cannot have left child for
-		// sure
-		// if it does have the right child, add it to the left of
-		// successorParent.
-		// successsorParent
+		//verifica se o sucessor tem um no direito, se tiver um no direito adiciona 
+		//no no esquerdo do pai
 		if (successsor != deleleNo.right) {
 			successsorParent.left = successsor.right;
 			successsor.right = deleleNo.right;
